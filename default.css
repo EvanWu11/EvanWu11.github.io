@@ -353,7 +353,7 @@ h6 { font-size: 26px;}
     background-color: white; /* Caption background */
     color: red; /* Text color */
     padding: 5px; /* Padding around text */
-    font-family: 'Indie Flower', cursive; /* Handwriting-like font */
+    font-family: 'Indie Flower'; /* Handwriting-like font */
     font-size: 1em; /* Adjust font size as needed */
     border: 2px solid red; /* Border for the caption */
     z-index: 10; /* Stack above other elements */
