@@ -343,13 +343,20 @@ h6 { font-size: 26px;}
 
 .image-caption-container {
     position: relative;
-    display: inline-block; /* Makes the container inline with text but block for positioning children */
+    display: inline-block; 
+}
+
+.image-caption-container img {
+    display: block;
+    width: 100%;
+    height: auto;	
 }
 
 .image-caption {
     position: absolute;
-    top: 1em; /* Adjust as needed - creates space below the image for the caption */
-    right: 26%; /* Position the caption to the right side of the image */
+    top: 8%; /* Adjust as needed - creates space below the image for the caption */
+    left: 50%; /* Position the caption to the right side of the image */
+    transform: translateX(-50%); 
     background-color: white; /* Caption background */
     color: red; /* Text color */
     padding: 5px; /* Padding around text */
@@ -438,9 +445,6 @@ h6 { font-size: 26px;}
 	}
 
 	.image-caption{
-		left: 50%;
-		transform: translateX(-50%);
-		top: auto;
-		bottom: 20px;
+		font-size: .75em;
 	}
 }
