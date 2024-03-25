@@ -37,3 +37,30 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Serialize the form data
+    var formData = new FormData(this);
+
+    // Send the form data to Formspree
+    fetch('https://formspree.io/f/xbjnanye', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        },
+    })
+    .then(response => {
+        if (response.ok) {
+            // Show the dialogue box
+            document.getElementById('message-dialogue').style.display = 'block';
+            document.getElementById('contact-form').reset(); 
+        } else {
+            // Handle errors (optional)
+            alert('Oops! Something went wrong.');
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
