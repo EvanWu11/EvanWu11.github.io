@@ -348,8 +348,8 @@ h6 { font-size: 26px;}
 
 .image-caption {
     position: absolute;
-    top: 22px; /* Adjust as needed - creates space below the image for the caption */
-    right: 142px; /* Position the caption to the right side of the image */
+    top: 1em; /* Adjust as needed - creates space below the image for the caption */
+    right: 26%; /* Position the caption to the right side of the image */
     background-color: white; /* Caption background */
     color: red; /* Text color */
     padding: 5px; /* Padding around text */
@@ -358,7 +358,8 @@ h6 { font-size: 26px;}
     border: 2px solid red; /* Border for the caption */
     z-index: 10; /* Stack above other elements */
     white-space: nowrap; /* Prevent caption from wrapping to a new line */
-    text-align: center; /* Center the text inside the caption */
+    text-align: center; /* Center the text inside the caption */ 	
+    max-width: 80%;	
 }
 
 .image-caption::before {
