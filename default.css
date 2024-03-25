@@ -436,4 +436,8 @@ h6 { font-size: 26px;}
 	.right-column{
 		justify-content: center;
 	}
+
+	.image-caption{
+		right: 50%;
+	}
 }
