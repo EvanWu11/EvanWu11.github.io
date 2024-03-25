@@ -348,8 +348,8 @@ h6 { font-size: 26px;}
 
 .image-caption {
     position: absolute;
-    top: 15px; /* Adjust as needed - creates space below the image for the caption */
-    right: 123px; /* Position the caption to the right side of the image */
+    top: 22px; /* Adjust as needed - creates space below the image for the caption */
+    right: 142px; /* Position the caption to the right side of the image */
     background-color: white; /* Caption background */
     color: red; /* Text color */
     padding: 5px; /* Padding around text */
