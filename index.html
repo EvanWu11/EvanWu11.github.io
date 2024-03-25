@@ -162,7 +162,7 @@
 		<div class="main-container">
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" action="https://formspree.io/f/xbjnanye" method="POST">
 				<label>Name</label>
 				<input class="input-field" type="text" name="name">
 
@@ -177,6 +177,10 @@
 
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
+			<div id="message-dialogue" style="display:none; position:fixed; top:20%; left:50%; transform:translate(-50%, -50%); background-color:white; padding:20px; border-radius:5px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+			    <p id="message-content">Your email was sent successfully!</p>
+			    <button onclick="document.getElementById('message-dialogue').style.display='none'">OK</button>
+			</div>
 		</div>
 	</section>
 
