@@ -369,20 +369,6 @@ h6 { font-size: 26px;}
     max-width: 80%;	
 }
 
-.image-caption::before {
-    content: '';
-    position: absolute;
-    left: 50%; /* Centers the arrow under the caption */
-    bottom: -10px; /* Positions the arrow directly below the caption box */
-    margin-left: -10px; /* Adjusts the arrow's horizontal position to be centered */
-    width: 0; /* Zero width - the arrow is created purely from borders */
-    height: 0; /* Zero height - the arrow is created purely from borders */
-    border-left: 10px solid transparent; /* Creates the side of the arrow */
-    border-right: 10px solid transparent; /* Creates the side of the arrow */
-    border-top: 10px solid red; /* Creates the downward-pointing arrow, color and size can be adjusted */
-    transform: translateX(-50%); /* Ensures the arrow is perfectly centered */
-}
-
 #contact-form{
 	display: block;
 	max-width: 600px;
